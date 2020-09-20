@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <form action="/servers/<%=guild.id%>" method="POST" id="form_ADDROLE">
+          <h2 class="display-7">Rang Hozzáadása </h2>
+          <b>A szerver emberei: </b>
+          <select id="members2" name="memberslist2" aria-controls="config" class="form-control form-control-sm"
+            style="margin-bottom: 5px;">
+            <option value="a">Members lista: </option>
+            <% guild.members.forEach(md => {%>
+            <option value="<%= md.id %>" selected<select>>   <%= md.user.username %></option>
+            <% }); %>
+          </select>
+          <b>Rangok: </b>
+          <select id="rangok2" name="ranglista" aria-controls="config" class="form-control form-control-sm"
+            style="margin-bottom: 5px;">
+            <option value="b">Válassz rangot: </option>
+            <% guild.roles.forEach(k => {%>
+            <option value="<%= k.id %>" selected<select>> <%= k.name %></option>
+            <% }); %>
+          </select>
+          <button type="submit" class="btn" id="form-ADDROLE2" aria-placeholder="Rang" style="color: #363636 !important;border-color: #ced4da !important;" onclick="rangadas();">Hozzáadás!</button>
+      </div>
+    </div>
+  </div>
