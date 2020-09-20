@@ -4,7 +4,7 @@
 	"webhook": "https://discord.com/oauth2/authorize?client_id=745904881725866024&permissions=2048&scope=guilds",
 	"defaultPrefix": "!",
 	"clientSecret": "6kzou-sX7hiLKavyns0ukimbx5zoFZv9",
-	"websiteURL": "",
+	"websiteURL": "https://hypr-dash.herokuapp.com",
 
 	"red": "0xffb3ba",
 	"orange": "0xffdfba",
