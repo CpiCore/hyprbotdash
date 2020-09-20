@@ -28,8 +28,8 @@ module.exports.load = async(client) => {
     });
   }));
 
-  http.port = 8000;
-  express.port = 8000;
+  http.port = process.env.PORT || 8000;
+  express.port = process.env.PORT || 8000;
   http.client = client;
 
   app
