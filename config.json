@@ -4,7 +4,7 @@
 	"webhook": "https://discord.com/api/oauth2/authorize?client_id=745904881725866024&redirect_uri=https%3A%2F%2Fhypr-dash.herokuapp.com%2F&response_type=code&scope=guilds",
 	"defaultPrefix": "!",
 	"clientSecret": "6kzou-sX7hiLKavyns0ukimbx5zoFZv9",
-	"websiteURL": "https://hypr-dash.herokuapp.com",
+	"websiteURL": "https://hypr-dash.herokuapp.com/",
 
 	"red": "0xffb3ba",
 	"orange": "0xffdfba",
