@@ -1,7 +1,7 @@
 {
 	"token": "NzQ1OTA0ODgxNzI1ODY2MDI0.Xz4kDg.t_1dam-9kBC3Ca44fG_V6nmsO7o",
 	"ownerID": "477814830598717441",
-	"webhook": "https://discord.com/api/oauth2/authorize?client_id=745904881725866024&redirect_uri=https%3A%2F%2Fhypr-dash.herokuapp.com%2F&response_type=code&scope=guilds",
+	"webhook": "https://discord.com/api/oauth2/authorize?client_id=745904881725866024&redirect_uri=https%3A%2F%2Fhypr-dash.herokuapp.com&response_type=code&scope=guilds",
 	"defaultPrefix": "!",
 	"clientSecret": "6kzou-sX7hiLKavyns0ukimbx5zoFZv9",
 	"websiteURL": "https://hypr-dash.herokuapp.com/",
