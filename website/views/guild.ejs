@@ -134,7 +134,7 @@
             style="margin-bottom: 5px;">
             <option value="NOT_SET">Members lista: </option>
             <% guild.members.forEach(m => {%>
-            <option value="<%= m.id %>" selected<select>>   <%= m.user.username %></option>
+            <option value="<%= m.id %>" selected<select>> <%= m.user.username %></option>
             <% }); %>
           </select>
       </div>
@@ -174,7 +174,7 @@
       }, 3000)
     }
 
-    function rangadas(){
+    function rangadas() {
       const kinek = guild.members.cache.find(members)
       const role = guild.roles.cache.find(rangok)
       kinek.roles.add(role)
@@ -189,6 +189,19 @@
         document.getElementById('form_MESSAGE').submit()
 
       }, 3000)
+    }
+
+    function prefix() {
+
+      const redis = require("../modules/db");
+      const query = ""
+      let a = ""
+      const redisClient = await redis()
+      try {
+        a = await redisClient.get(`prefix-${guild.id}`)
+      } finally {
+        redisClient.quit()
+      }
     }
   </script>
 

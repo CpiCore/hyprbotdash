@@ -1,4 +1,4 @@
-const redis = require('redis')
+const redis = require('async-redis')
 const redisPath = "//redis-10336.c232.us-east-1-2.ec2.cloud.redislabs.com:10336"
 const redisPassword = "csani1234"
 

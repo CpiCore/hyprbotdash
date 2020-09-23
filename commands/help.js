@@ -48,42 +48,42 @@ exports.run = async (client, message) => {
         },
 
         {
-            title: "Moderation Commands",
-            description: sortedHelp.Moderation || "No Commands Available",
+            title: "Moderációs parancsok",
+            description: sortedHelp.Moderation || "",
 
         },
 
         {
-            title: "Fun Commands",
-            description: sortedHelp.Fun || "No Commands Available",
+            title: "Szórakkozás",
+            description: sortedHelp.Fun || "**Nincsenek ilyen parancsok!**",
         },
 
         {
-            title: "Miscellaneous Commands",
-            description: sortedHelp.Miscellaneous || "No Commands Available",
+            title: "Alap parancsok",
+            description: sortedHelp.Miscellaneous || "**Nincsenek ilyen parancsok!**",
         },
 
         {
-            title: "Administration Commands",
-            description: sortedHelp.Administration || "No Commands Available",
+            title: "Admin parancsok",
+            description: sortedHelp.Administration || "**Nincsenek ilyen parancsok!**",
         },
 
         {
-            title: "System Commands",
-            description: sortedHelp.System || "No Commands Available"
+            title: "Rendszer parancsok",
+            description: sortedHelp.System || "**Nincsenek ilyen parancsok!**"
         }
     ];
     let embed = new Discord.RichEmbed()
         .setColor(config.blue)
         .setTitle("Loading Help...")
-        .setFooter(`Use ${prefix}[command] help for more info.`);
+        .setFooter(`Használd ${prefix}[parancsot] a **segítségért**.`);
 
     message.channel.send(embed).then(msg => {
         function reactEmojis(emojis) {
             if (emojis === 6) {
                 embed.setTitle(pages[0].title);
                 embed.setDescription(pages[0].description);
-                embed.setFooter(`Use ${prefix}[command] help for more info.`)
+                embed.setFooter(`Használd ${prefix}[parancsot] a **segítségért**.`)
                 msg.edit(embed);
                 return;
             }
@@ -100,7 +100,7 @@ exports.run = async (client, message) => {
                 embed.setColor(config.blue)
                 embed.setTitle(pages[rid].title)
                 embed.setDescription(pages[rid].description)
-                embed.setFooter(`Use ${prefix}[command] help for more info.`)
+                embed.setFooter(`Használd ${prefix}[parancsot] a **segítségért**.`)
 
             msg.edit(embed)
         };
